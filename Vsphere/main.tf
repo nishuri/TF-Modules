@@ -1,3 +1,5 @@
+# Basic Example to run the module which will create a quick Windows VM in Vsphere 
+
 module "windows_vm" {
   source          = "./windows"
   dc              = "example-ds"
