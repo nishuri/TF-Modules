@@ -22,8 +22,7 @@ data "vsphere_resource_pool" "pool" {
 
 #To locate the network
 data "vsphere_network" "network" {
-  count         = var.network_cards != null ? length(var.network_cards) : 0
-  name          = var.network_cards[count.index]
+  name          = var.network_cards
   datacenter_id = data.vsphere_datacenter.dc.id
 }
 
