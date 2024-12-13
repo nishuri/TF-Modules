@@ -56,6 +56,7 @@ variable "thinprovisoned" {
 variable "tags" {
   description = "Tags for the virtual machine"
   type        = map(string)
+  default     = null
 }
 
 
